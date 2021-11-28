@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG path converter</title>
+    <link rel="stylesheet" href="./styles/index.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_inner">
+        <span class="text-grey">SVG path to CSS</span> clip-path: polygon()
+        <span class="text-grey">and</span> clip-path: url()
+      </div>
+    </header>
+    <main class="main">
+      <div class="main_inner">
+        <div class="main_title--first title">
+          <div class="number">1</div>
+          <h2>Paste the SVG code here:</h2>
+        </div>
+
+        <section class="section">
+          <div class="section_inner">
+            <div class="section_left">
+              <form>
+                <textarea
+                  class="main_textarea"
+                  placeholder="<svg width='252' height='226' viewBox='0 0 252 226' fill='none' xmlns='http://www.w3.org/2000svg'><path d='M0 0L235.5 20L252 226H0V0Z' fill='#C4C4C4'/></svg>'"
+                ></textarea>
+                <button class="main_button" type="submit">Convert</button>
+              </form>
+            </div>
+            <div class="section_right">
+              <div class="preview">
+                <span>Preview</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="main_title--second title">
+          <div class="number">2</div>
+          <h2>Choose the result:</h2>
+        </div>
+        <section class="section">
+          <div class="section_inner">
+            <div class="section_left">
+              <div class="section_text">
+                If your shape does not contain rounded edges and consists only
+                of polylines, then choose the option using
+                <span>clip-path: polygon()</span>, because it uses relative
+                units and your div will be <span>adaptive</span>
+              </div>
+            </div>
+            <div class="section_right">
+              <div class="preview">
+                <span>Preview</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section_inner">
+            <div class="section_left">
+              <div class="section_text">
+                If your shape has rounded edges, then choose the option using
+                <span>clip-path: path()</span>. TODO: ADD TEXT ABOUT SVG
+              </div>
+            </div>
+            <div class="section_right">
+              <div class="preview">
+                <span>Preview</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: 750px) {
+    gap: 10px;
+  }
+}
+
+.number {
+  height: 64px;
+  width: 64px;
+  font-size: 35px;
+  color: #fff;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #4469ca 0%, #263b72 100%);
+  box-shadow: 6.85802e-16px 11.2px 22.4px rgba(11, 17, 33, 0.4955),
+    inset -3.24613e-16px -5.30133px 5.30133px #223465,
+    inset 3.24613e-16px 5.30133px 5.30133px #486fd6;
+
+  @media (max-width: 750px) {
+    height: 45px;
+    width: 45px;
+    font-size: 30px;
+  }
+}

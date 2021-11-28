@@ -1,0 +1,26 @@
+.section {
+  margin-bottom: 120px;
+  &_inner {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &_text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: 750px) {
+    margin-bottom: 60px;
+    &_inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
