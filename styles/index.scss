@@ -7,6 +7,7 @@
 @import "./blocks/title";
 @import "./blocks/section";
 @import "./blocks/preview";
+@import "./blocks/copy";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 body {
@@ -27,6 +28,7 @@ body {
 
   &_title--second {
     margin-bottom: 30px;
+    scroll-margin: 20px;
   }
 
   &_textarea {
@@ -65,4 +67,14 @@ body {
   @media (max-width: 700px) {
     padding-top: 35px;
   }
+}
+
+#preview_url {
+  clip-path: url(#my-clip-path);
+}
+
+.shapes{
+  position: absolute;
+  height: 0;
+  width: 0;
 }

@@ -21,6 +21,7 @@
     margin-bottom: 60px;
     &_inner {
       grid-template-columns: 1fr;
+      gap: 10px;
     }
   }
 }

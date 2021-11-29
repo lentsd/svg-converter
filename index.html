@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./styles/index.scss" />
   </head>
   <body>
+    <svg class="shapes">
+      <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+        <path
+          d="M 0 0.002C 0 0.001 0.001 0 0.002 0L 0.998 0.002C 0.999 0.002 1 0.003 1 0.005V  0.998C 1 0.999 0.999 1 0.998 1H 0.002 C 0.001 1 0 0.999 0 0.998V  0.002Z  "
+        ></path>
+      </clipPath>
+    </svg>
+
     <header class="header">
       <div class="header_inner">
         <span class="text-grey">SVG path to CSS</span> clip-path: polygon()
@@ -26,6 +34,7 @@
             <div class="section_left">
               <form>
                 <textarea
+                  name="svg"
                   class="main_textarea"
                   placeholder="<svg width='252' height='226' viewBox='0 0 252 226' fill='none' xmlns='http://www.w3.org/2000svg'><path d='M0 0L235.5 20L252 226H0V0Z' fill='#C4C4C4'/></svg>'"
                 ></textarea>
@@ -33,9 +42,9 @@
               </form>
             </div>
             <div class="section_right">
-              <div class="preview">
+              <!-- <div class="preview">
                 <span>Preview</span>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -55,11 +64,20 @@
               </div>
             </div>
             <div class="section_right">
-              <div class="preview">
+              <div class="preview" id="preview_polygon">
                 <span>Preview</span>
               </div>
+              <div class="copy">
+                <div class="copy_text">
+                  clip-path: polygon(90.007% 100%, 0% 10 90.007% 100%, 0% 10 90.007% 100%, 0% 10)
+                </div>
+                  <div class="copy_button">
+                    <img src="/assets/copy.svg" alt="copy this">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+
         </section>
 
         <section class="section">
@@ -67,17 +85,20 @@
             <div class="section_left">
               <div class="section_text">
                 If your shape has rounded edges, then choose the option using
-                <span>clip-path: path()</span>. TODO: ADD TEXT ABOUT SVG
+                <span>clip-path: url()</span>. TODO: ADD TEXT ABOUT SVG
               </div>
             </div>
             <div class="section_right">
-              <div class="preview">
+              <div class="preview" id="preview_url">
                 <span>Preview</span>
               </div>
             </div>
           </div>
         </section>
+
       </div>
+    </div>
     </main>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>

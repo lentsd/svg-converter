@@ -1,0 +1,38 @@
+.copy {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 475px;
+
+  background: $main-color;
+  border-radius: $border-radius;
+  padding: 5px 18px;
+  color: #fff;
+  font-size: 20px;
+
+  &_text {
+    max-width: calc(100% - 46px);
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  &_button {
+    height: 21px;
+    width: 23px;
+    cursor: pointer;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba($main-color, 0.5);
+}

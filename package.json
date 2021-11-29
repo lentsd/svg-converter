@@ -20,5 +20,8 @@
   "homepage": "https://github.com/dnotrad/svg-converter#readme",
   "devDependencies": {
     "sass": "^1.43.5"
+  },
+  "dependencies": {
+    "svg-path-parser": "^1.1.0"
   }
 }
