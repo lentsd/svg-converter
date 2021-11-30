@@ -73,8 +73,36 @@ body {
   clip-path: url(#my-clip-path);
 }
 
-.shapes{
+.shapes {
   position: absolute;
   height: 0;
   width: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: darkgrey;
+  border-radius: $border-radius;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba($main-color, 0.5);
+  border-radius: $border-radius;
+}
+
+.wrong {
+  display: none;
+  color: tomato;
+  font-weight: 700;
+  &.active {
+    display: block;
+  }
+}
+
+form {
+  width: 100%;
 }

@@ -31,21 +31,15 @@
 
         <section class="section">
           <div class="section_inner">
-            <div class="section_left">
               <form>
                 <textarea
                   name="svg"
                   class="main_textarea"
                   placeholder="<svg width='252' height='226' viewBox='0 0 252 226' fill='none' xmlns='http://www.w3.org/2000svg'><path d='M0 0L235.5 20L252 226H0V0Z' fill='#C4C4C4'/></svg>'"
                 ></textarea>
+                <div class="wrong">Wrong SVG</div>
                 <button class="main_button" type="submit">Convert</button>
               </form>
-            </div>
-            <div class="section_right">
-              <!-- <div class="preview">
-                <span>Preview</span>
-              </div> -->
-            </div>
           </div>
         </section>
 
@@ -68,15 +62,15 @@
                 <span>Preview</span>
               </div>
               <div class="copy">
-                <div class="copy_text">
-                  clip-path: polygon(90.007% 100%, 0% 10 90.007% 100%, 0% 10 90.007% 100%, 0% 10)
+                <div class="copy_text" id="copy_polygon">
+                  clip-path: polygon();
                 </div>
-                  <div class="copy_button">
+                  <div class="copy_button" id="copy_polygon_button">
                     <img src="/assets/copy.svg" alt="copy this">
                   </div>
-                </div>
               </div>
             </div>
+          </div>
 
         </section>
 
@@ -85,17 +79,32 @@
             <div class="section_left">
               <div class="section_text">
                 If your shape has rounded edges, then choose the option using
-                <span>clip-path: url()</span>. TODO: ADD TEXT ABOUT SVG
+                <span>clip-path: url()</span>. Note! For this method, you also need to insert an svg into the markup, which you can find below.
               </div>
             </div>
             <div class="section_right">
               <div class="preview" id="preview_url">
                 <span>Preview</span>
               </div>
+              <div class="copy">
+                <div class="copy_text" id="copy_url">
+                  clip-path: url();
+                </div>
+                  <div class="copy_button" id="copy_url_button">
+                    <img src="/assets/copy.svg" alt="copy this">
+                  </div>
+              </div>
+              <div class="copy">
+                <div class="copy_text" id="copy_url_svg">
+                  svg will be here
+                </div>
+                  <div class="copy_button" id="copy_svg_button">
+                    <img src="/assets/copy.svg" alt="copy this">
+                  </div>
+              </div>
             </div>
           </div>
         </section>
-
       </div>
     </div>
     </main>
